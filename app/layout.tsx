@@ -7,8 +7,8 @@ import "./globals.css";
 const monserat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next Boilerplate",
-  description: "Next Boilerplate with Tailwind, Typescript and NextAuth",
+  title: "HPHi Jawa Barat",
+  description: "Himpunan Perawat Holistik Jawa Barat",
 };
 
 const RootLayout: FC<Readonly<PropsWithChildren>> = ({ children }) => {
