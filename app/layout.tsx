@@ -7,8 +7,11 @@ import "./globals.css";
 const monserat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HPHi Jawa Barat",
+  title: "HPHI Jawa Barat",
   description: "Himpunan Perawat Holistik Jawa Barat",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const RootLayout: FC<Readonly<PropsWithChildren>> = ({ children }) => {

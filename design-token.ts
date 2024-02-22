@@ -3,7 +3,7 @@ export const colors = {
   black: "#000000",
   slate: "#E4E5E7",
   primary: {
-    DEFAULT: "#009647",
+    DEFAULT: "#59be92",
     50: "#edfff5",
     100: "#d6ffe9",
     200: "#afffd4",
@@ -33,7 +33,7 @@ export const colors = {
   },
 
   secondary: {
-    DEFAULT: "#f8bf02",
+    DEFAULT: "#cadfc3",
     50: "#fffeea",
     100: "#fffcc5",
     200: "#fff986",

@@ -5,7 +5,7 @@ import { InputCheckbox } from "./index";
 const meta: Meta<typeof InputCheckbox> = {
   component: InputCheckbox,
   tags: ["autodocs"],
-  title: "components/atoms/Input Checkbox",
+  title: "Components/Atoms/Input Checkbox",
   argTypes: {
     status: {
       options: ["default", "error", "warning", "success"],
