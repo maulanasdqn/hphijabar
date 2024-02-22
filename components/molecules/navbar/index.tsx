@@ -10,50 +10,44 @@ type TNavbarMenu = {
 
 const NAVBAR_MENU: Array<TNavbarMenu> = [
   {
-    title: "Berita",
-    href: "/",
-  },
-  {
     title: "Profil",
-    href: "/profil",
+    href: "/profile",
   },
   {
-    title: "Galeri",
-    href: "/gallery",
+    title: "Berita",
+    href: "/news",
   },
   {
-    title: "Tentang Kami",
-    href: "/about",
+    title: "Informasi",
+    href: "/information",
   },
 ];
 
 export const Navbar: FC = (): ReactElement => {
   return (
-    <header className="flex justify-between w-full bg-transparent items-center py-10">
+    <header className="flex justify-between w-full z-40 bg-primary text-white fixed items-center px-40 py-4">
       <figure className="flex items-center gap-x-2">
         <Image
           alt="logo"
           className="object-fill"
           src="/logo.png"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
         />
-        <figcaption className="text-2xl text-white font-bold">
-          HPHI Jabar
-        </figcaption>
+        <figcaption className="text-2xl  font-bold">HPHI Jabar</figcaption>
       </figure>
-      <nav className="flex items-center gap-x-4">
+      <nav className="flex items-center gap-x-8">
         {NAVBAR_MENU.map((menu, index) => (
           <Link
             key={index}
             href={menu.href}
-            className="font-semibold text-primary-2 shadow-xs text-lg hover:text-success-700"
+            className="font-semibold  shadow-xs text-lg hover:text-success-700"
           >
             {menu.title}
           </Link>
         ))}
       </nav>
-      <Button variant={"primary"} size={"md"}>
+      <Button variant={"secondary"} size={"md"}>
         Kontak Kami
       </Button>
     </header>
