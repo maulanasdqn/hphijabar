@@ -30,9 +30,9 @@ const Dummy_News: Array<TNews> = [
 export const News: FC = (): ReactElement => {
   return (
     <section className="pb-20">
-      <h1 className="text-primary-2 font-semibold text-3xl pt-16">
+      <span className="text-primary-2 font-semibold text-3xl pt-16">
         Berita <span className="text-white">Terkini</span>
-      </h1>
+      </span>
       <div className="py-1 w-[100px] ml-[110px] bg-warning rounded-md"></div>
       <div className="grid grid-cols-3 gap-8 my-6">
         {Dummy_News.map((x, i) => (

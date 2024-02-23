@@ -9,12 +9,12 @@ export const Tesimoni: FC = (): ReactElement => {
           <div className="flex w-20 h-20 rounded-full bg-primary items-center justify-center text-white">
             A
           </div>
-          <p className="flex flex-col gap-2 text-lg text-black font-normal">
+          <span className="flex flex-col gap-2 text-lg text-black font-normal">
             "Dengan adanya himpunan ini perawat memiliki banyak koneksi"
             <span>
-              <p className="text-end">- Ahmad Setiawan</p>
+              <span className="text-end">- Ahmad Setiawan</span>
             </span>
-          </p>
+          </span>
         </div>
       </div>
     </section>
