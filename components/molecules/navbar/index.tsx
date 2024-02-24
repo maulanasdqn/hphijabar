@@ -33,19 +33,7 @@ const NAVBAR_MENU: Array<TNavbarMenu> = [
   },
   {
     title: "Berita",
-    href: "/news",
-    children: [
-      {
-        title: "Terkini",
-        href: "/#",
-        key: "#visi",
-      },
-      {
-        title: "Terdahulu",
-        href: "/#",
-        key: "#sejarah",
-      },
-    ],
+    href: "/listnews",
   },
   {
     title: "Informasi",
