@@ -9,8 +9,8 @@ const VisiPage: NextPage = (): ReactElement => {
         <div className="flex flex-col gap-4 w-[500px] h-[300px] justify-center items-center px-6 bg-primary rounded-md ">
           <h1>Visi :</h1>
           <p className="text-center">
-            "Menjadi organisasi profesi yang handal, yang disayangi anggota,
-            dicintai pemerintah dan disegani organisasi lain"
+            {'"'} Menjadi organisasi profesi yang handal, yang disayangi
+            anggota, dicintai pemerintah dan disegani organisasi lain {'"'}
           </p>
         </div>
         <div className="flex flex-col gap-4 w-[500px] h-[300px] justify-center text-sm px-6 bg-primary-2 rounded-md">
