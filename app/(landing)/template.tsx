@@ -6,7 +6,7 @@ const LandingTemplate: FC<PropsWithChildren> = ({ children }): ReactElement => {
   return (
     <main className="w-full h-full items-center flex flex-col bg-gradient-to-r from-primary to-secondary">
       <Navbar />
-      <section className="flex flex-col w-full h-full max-w-[1000px]">
+      <section className="flex flex-col w-full h-full lg:max-w-[1000px]">
         {children}
       </section>
       <Footer />

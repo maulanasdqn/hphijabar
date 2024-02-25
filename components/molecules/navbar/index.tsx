@@ -44,7 +44,7 @@ const NAVBAR_MENU: Array<TNavbarMenu> = [
 export const Navbar: FC = (): ReactElement => {
   const [menuOpen, setMenuOpen] = useState("");
   return (
-    <header className="flex justify-between w-full z-40 bg-primary text-white fixed items-center px-40 py-4">
+    <header className="lg:flex hidden justify-between w-screen z-40 bg-primary text-white fixed items-center px-40 py-4">
       <figure className="flex items-center gap-x-2">
         <Image
           alt="logo"

@@ -29,18 +29,18 @@ const Dummy_News: Array<TNews> = [
 
 export const News: FC = (): ReactElement => {
   return (
-    <section className="pb-20">
+    <section className="pb-20 lg:p-0 p-8">
       <div className="flex w-full justify-between">
-        <span className="text-primary-2 font-semibold text-3xl pt-16">
+        <span className="text-primary-2 font-semibold lg:text-3xl text-xl pt-16">
           Berita <span className="text-white">Terkini</span>
         </span>
 
-        <span className="text-black font-semibold text-md pt-20">
+        <span className="text-black font-semibold lg:text-md text-xs lg:pt-20 pt-16">
           <Link href="/listnews">Lihat Selengkapnya...</Link>
         </span>
       </div>
-      <div className="py-1 w-[100px] ml-[110px] bg-warning rounded-md"></div>
-      <div className="grid grid-cols-3 gap-8 my-6">
+      <div className=" py-1 w-[100px] lg:ml-[110px] bg-warning rounded-md"></div>
+      <div className="grid lg:grid-cols-3 gap-8 my-6">
         {Dummy_News.map((x, i) => (
           <Link key={i} href={x.href}>
             <div className="w-full h-full bg-white rounded-md">

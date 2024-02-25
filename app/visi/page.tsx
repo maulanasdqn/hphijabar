@@ -5,8 +5,8 @@ const VisiPage: NextPage = (): ReactElement => {
   return (
     <section className="flex flex-col gap-12 w-full h-full py-24 justify-center items-center">
       <h1 className="text-primary-2 text-3xl font-bold">Visi & Misi</h1>
-      <div className="grid grid-cols-2 gap-[120px] text-white font-bold text-xl">
-        <div className="flex flex-col gap-4 w-[500px] h-[300px] justify-center items-center px-6 bg-primary rounded-md ">
+      <div className="grid lg:grid-cols-2 gap-[120px] text-white font-bold text-xl p-8">
+        <div className="flex flex-col gap-4 lg:w-[500px] w-auto h-[300px] justify-center items-center px-6 bg-primary rounded-md ">
           <h1>Visi :</h1>
           <p className="text-center">
             {'"'} Menjadi organisasi profesi yang handal, yang disayangi

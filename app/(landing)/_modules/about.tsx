@@ -2,10 +2,10 @@ import { FC, ReactElement } from "react";
 
 export const About: FC = (): ReactElement => {
   return (
-    <section className="flex h-full  justify-center items-center">
-      <div className="flex flex-col gap-6 w-full h-[300px] bg-primary-2 rounded-md text-white justify-center p-6 my-8">
+    <section className="flex h-full justify-center items-center lg:pt-0 pt-[200px]">
+      <div className="flex flex-col gap-6 w-full lg:h-[300px] h-[500px] bg-primary-2 rounded-md text-white justify-center p-6 my-8">
         <h1 className="text-3xl font-bold">Tentang Kami</h1>
-        <p>
+        <p className="line-clamp-8">
           HPHI yang merupakan paling muda dari seluruh himpunan/ikatan dibawah
           PPNI ini lahir pada tanggal 20 Oktober 2018 di Denpasar, Bali. HPHI
           adalah wadah bagi perawat yang berkecimpung di dunia keperawatan
