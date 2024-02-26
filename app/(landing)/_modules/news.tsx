@@ -1,6 +1,9 @@
-import { FC, Fragment, ReactElement } from "react";
+"use client";
+import { FC, Fragment, ReactElement, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type TNews = {
   src: string;
@@ -28,6 +31,9 @@ const Dummy_News: Array<TNews> = [
 ];
 
 export const News: FC = (): ReactElement => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="pb-20 lg:p-0 p-8">
       <div className="flex w-full justify-between">
@@ -43,7 +49,10 @@ export const News: FC = (): ReactElement => {
       <div className="grid lg:grid-cols-3 gap-8 my-6">
         {Dummy_News.map((x, i) => (
           <Link key={i} href={x.href}>
-            <div className="w-full h-full bg-white rounded-md">
+            <div
+              data-aos="fade-right"
+              className="w-full h-full bg-white rounded-md"
+            >
               <Image
                 alt="news"
                 className=""

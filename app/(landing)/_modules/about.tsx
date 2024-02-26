@@ -1,8 +1,17 @@
-import { FC, ReactElement } from "react";
+"use client";
+import { FC, ReactElement, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const About: FC = (): ReactElement => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="flex h-full justify-center items-center lg:pt-0 pt-[200px]">
+    <section
+      data-aos="zoom-in-up"
+      className="flex h-full justify-center items-center lg:pt-0 pt-[200px]"
+    >
       <div className="flex flex-col gap-6 w-full lg:h-[300px] h-[500px] bg-primary-2 rounded-md text-white justify-center p-6 my-8">
         <h1 className="text-3xl font-bold">Tentang Kami</h1>
         <p className="line-clamp-8">
@@ -21,3 +30,6 @@ export const About: FC = (): ReactElement => {
     </section>
   );
 };
+function seEffect(arg0: () => void, arg1: never[]) {
+  throw new Error("Function not implemented.");
+}
