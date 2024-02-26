@@ -7,8 +7,8 @@ const HistoryPage: NextPage = (): ReactElement => {
       <h1 className="text-3xl text-primary-2 font-bold">
         Sejarah PPNI (Persatuan Perawat Nasional Indonesia)
       </h1>
-      <div className="grid grid-cols-2 gap-[120px] text-primary-2 text-justify text-lg text-semibold">
-        <div className="flex flex-col gap-4 w-[500px] h-auto rounded-md">
+      <div className="grid lg:grid-cols-2 lg:gap-[120px] gap-8 text-primary-2 text-justify text-lg text-semibold">
+        <div className="flex flex-col gap-4 lg:w-[500px] w-full h-auto rounded-md">
           <span>
             Persatuan Perawat Nasional Indonesia (PPNI) lahir pada tanggal 17
             Maret 1974. Kebulatan tekad spirit yang sama dicetuskan oleh
@@ -42,7 +42,7 @@ const HistoryPage: NextPage = (): ReactElement => {
             Indonesia (IPI).
           </span>
         </div>
-        <div className="flex flex-col gap-4 w-[500px] h-auto">
+        <div className="flex flex-col gap-4 lg:w-[500px] w-full h-auto">
           <span>
             Organisasi-organisasi perawat saat itu mengadakan pertemuan yang
             diantranya dihadiri oleh IPI, PPI dam PDKI dan diantaranya yang

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const ListNewsPage: NextPage = (): ReactElement => {
   return (
-    <section className="flex flex-col gap-8 py-24 ">
+    <section className="flex flex-col gap-8 lg:py-24 p-4 lg:p-0">
       <h1 className="text-2xl font-semibold">Berita Terkini</h1>
       {Dummy_News.map((x, i) => (
         <Link key={i} href={`/listnews/${x.slug}`}>
-          <div className="flex gap-8 w-full h-[200px] rounded-md shadow shadow-lg">
+          <div className="flex lg:flex-row flex-col gap-8 w-full lg:h-[200px] h-auto rounded-md shadow shadow-lg">
             <Image
               alt="news"
-              className="w-[300px] rounded-md"
+              className="lg:w-[300px] w-full rounded-md"
               src={x.src}
               width={400}
               height={250}
