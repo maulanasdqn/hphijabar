@@ -7,7 +7,7 @@ import Image from "next/image";
 const DetailNewsPage: NextPage = (): ReactElement => {
   const router = useRouter();
   return (
-    <section className="flex flex-col bg-white w-full h-full py-4 p-8 lg:p-0 pt-24 justify-center">
+    <section className="flex flex-col bg-white w-full h-full py-4 p-8 lg:p-0 lg:pt-24 pt-24 justify-center">
       <span className="flex text-white lg:text-3xl text-md font-bold bg-primary-2 rounded-md w-full text-center items-center justify-center h-14">
         Kunjungan ke Labschool, Menpora Coba Kipin ATM
       </span>

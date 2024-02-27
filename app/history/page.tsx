@@ -1,13 +1,22 @@
+"use client";
 import { NextPage } from "next";
-import { ReactElement } from "react";
+import { ReactElement, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HistoryPage: NextPage = (): ReactElement => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="flex flex-col gap-8 w-full h-full bg-white items-center py-24">
       <h1 className="text-3xl text-primary-2 font-bold">
         Sejarah PPNI (Persatuan Perawat Nasional Indonesia)
       </h1>
-      <div className="grid lg:grid-cols-2 lg:gap-[120px] gap-8 text-primary-2 text-justify text-lg text-semibold">
+      <div
+        data-aos="fade-right"
+        className="grid lg:grid-cols-2 lg:gap-[120px] gap-8 text-primary-2 text-justify text-lg text-semibold"
+      >
         <div className="flex flex-col gap-4 lg:w-[500px] w-full h-auto rounded-md">
           <span>
             Persatuan Perawat Nasional Indonesia (PPNI) lahir pada tanggal 17
