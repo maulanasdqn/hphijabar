@@ -1,6 +1,6 @@
-# Next Boilerplate
+# HPHI Jawa Barat
 
-> Introduction to Next.js boilerplate
+> Himpunan Perawat Holistik Indonesia Jawa Barat
 
 ## Table of Contents
 
